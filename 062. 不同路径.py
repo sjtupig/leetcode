@@ -10,7 +10,8 @@ class Solution:
         if n > 1 : res[0][1] = 1 
         if m > 1 : res[1][0] = 1 
         '''
-        res = [[0]*n]*m
+        #res = [[0]*n]*m
+        res = [[0 for _ in range(n)] for _ in range(m)]
         for i in range(0,n):
         	res[0][i] = 1
         for i in range(0,m):
